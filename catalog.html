@@ -47,6 +47,149 @@
       </nav>
     </header>
 
+    <main>
+      <header>
+        <h1>Моноподы для селфи</h1>
+        <ol>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Каталог товаров</a></li>
+          <li><a>Моноподы для селфи</a></li>
+        </ol>
+      </header>
+
+      <section>
+        <h2>Фильтр:</h2>
+        <form action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Стоимость</legend>
+            <button type="button">
+              <span class="visually-hidden">Изменить минимальную цену.</span>
+            </button>
+            <label>
+              от <input type="number" name="min-price">
+            </label>
+            <button type="button">
+              <span class="visually-hidden">Изменить максимальную цену.</span>
+            </button>
+            <label>
+              до <input type="number" name="max-price">
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="color" value="black" checked> Чёрный
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="color" value="white" checked> Белый
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="color" value="blue"> Синий
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="color" value="red"> Красный
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="color" value="pink"> Розовый
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" name="bluetooth" checked> Есть
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="bluetooth"> Нет
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+      </section>
+
+      <section>
+        <form action="https://echo.htmlacademy.ru">
+          <label class="visually-hidden">
+            Сортировка:
+            <select name="sort">
+              <option value="popular">Сначала популярные</option>
+            </select>
+          </label>
+          <button type="submit">
+            <span class="visually-hidden">Отсортировать.</span>
+          </button>
+        </form>
+
+        <a href="#">
+          <span class="visually-hidden">По возрастанию.</span>
+        </a>
+        <a href="#">
+          <span class="visually-hidden">По убыванию.</span>
+        </a>
+      </section>
+
+      <section>
+        <h2>Товары</h2>
+        <ol>
+          <li>
+            <a href="#">Подробнее<img src="" alt="Любительская селфи-палка"></a>
+            <h3>Любительская селфи-палка</h3>
+            <span>500 ₽</span>
+          </li>
+          <li>
+            <a href="#">Подробнее<img src="" alt="Профессиональная селфи-палка"></a>
+            <h3>Профессиональная селфи-палка </h3>
+            <span>1500 ₽</span>
+          </li>
+          <li>
+            <a href="#">Подробнее<img src="" alt="Непотопляемая селфи-палка"></a>
+            <h3>Непотопляемая селфи-палка</h3>
+            <span>2500 ₽</span>
+          </li>
+          <li>
+            <a href="#">Подробнее<img src="" alt="Селфи-палка «Следуй за мной»"></a>
+            <h3>Селфи-палка «Следуй за мной»</h3>
+            <span>4900 ₽</span>
+          </li>
+        </ol>
+      </section>
+
+      <footer>
+        <button type="button">Загрузить еще</button>
+        <ol>
+          <li><a href="#">Назад</a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">
+            <span class="visually-hidden">Следующие страницы</span>
+            ...</a>
+          </li>
+          <li><a href="#">15</a></li>
+          <li><a href="#">Вперед</a></li>
+        </ol>
+      </footer>
+    </main>
+
     <footer>
       <a href="https://htmlacademy.ru/">
         <img src="" alt="Логотип">
