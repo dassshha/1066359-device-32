@@ -1,0 +1,12 @@
+.delivery{
+  background-image: url("../img/service/delivery.png");
+  background-repeat: no-repeat;
+}
+.guarantee{
+  background-image: url("../img/service/guarantee.png");
+  background-repeat: no-repeat;
+}
+.credit{
+  background-image: url("../img/service/credit.png");
+  background-repeat: no-repeat;
+}
