@@ -1,0 +1,71 @@
+@font-face{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
+  font-display: swap;
+}
+body{
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+.custom-a{
+  color: #000000;
+  text-decoration: none;
+}
+.user-menu a, .catalog-menu a{
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.main-menu-a{
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.tagline{
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+.
+/*.delivery{*/
+/*  background-image: url("../img/service/delivery.png");*/
+/*  background-repeat: no-repeat;*/
+/*}*/
+/*.guarantee{*/
+/*  background-image: url("../img/service/guarantee.png");*/
+/*  background-repeat: no-repeat;*/
+/*}*/
+/*.credit{*/
+/*  background-image: url("../img/service/credit.png");*/
+/*  background-repeat: no-repeat;*/
+/*}*/
