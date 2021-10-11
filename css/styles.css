@@ -28,26 +28,29 @@
 }
 body{
   font-family: Rubik, sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #444444;
 }
-.custom-a{
+.uppercase{
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
   color: #000000;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.custom-a{
   text-decoration: none;
 }
 .user-menu a, .catalog-menu a{
   font-size: 16px;
   line-height: 19px;
-}
-
-.main-menu-a{
-  font-family: Raleway, sans-serif;
-  font-weight: 800;
-  line-height: 21px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+  color: #000000;
 }
 .tagline{
   font-family: Raleway, sans-serif;
@@ -56,16 +59,96 @@ body{
   line-height: 50px;
   color: #000000;
 }
-.
-/*.delivery{*/
-/*  background-image: url("../img/service/delivery.png");*/
-/*  background-repeat: no-repeat;*/
-/*}*/
-/*.guarantee{*/
-/*  background-image: url("../img/service/guarantee.png");*/
-/*  background-repeat: no-repeat;*/
-/*}*/
-/*.credit{*/
-/*  background-image: url("../img/service/credit.png");*/
-/*  background-repeat: no-repeat;*/
-/*}*/
+.product-characteristics dd{
+  font-size: 36px;
+  line-height: 30px;
+  color: #000000;
+}
+.product-characteristics dt{
+  font-size: 16px;
+}
+.title{
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.delivery-arrangement{
+  font-size: 20px;
+  line-height: 23px;
+}
+.companies{
+  line-height: 20px;
+}
+.name, .time{
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+}
+.grey{
+  color: #444444;
+}
+
+.contacts-address{
+  font-style: normal;
+}
+.delivery{
+  background-image: url("../img/service/delivery.png");
+  background-repeat: no-repeat;
+}
+.guarantee{
+  background-image: url("../img/service/guarantee.png");
+  background-repeat: no-repeat;
+}
+.credit{
+  background-image: url("../img/service/credit.png");
+  background-repeat: no-repeat;
+}
+.footer-address{
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+.footer-services a{
+  color: #FFFFFF;
+}
+.tel{
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: right;
+  color: #FFFFFF;
+}
+.price{
+  font-family: Rubik, sans-serif;
+  line-height: 21px;
+  text-align: right;
+  color: #444444;
+}
+.bread-crumbs a{
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  opacity: 0.6;
+}
+.main-footer{
+  background-color: #444444;
+  color: #FFFFFF;
+}
+.subscribe-section, .services-section{
+  background-color: #F0F0F0;
+}
+.filter-section{
+  background-color:  #E5E5E5;
+}
+.sort-section, .pagination{
+  background-color: #EBEBEB;
+}
+.filter-section h2{
+  background-color: #DCDCDC;
+}
+.product-categories img, .main-header{
+  background-color:  #FFE17F;
+}
