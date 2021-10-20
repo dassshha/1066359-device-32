@@ -21,48 +21,49 @@
         </button>
       </form>
 
-      <ul class="user-menu">
-        <li><a class="custom-a" href="#">Коля Петухов</a></li>
-        <li><a class="custom-a" href="#">Выйти</a></li>
-        <li><a class="custom-a" href="#">Сравнить</a></li>
-        <li><a class="custom-a" href="#">Корзина</a></li>
+      <ul class="user-menu-list">
+        <li class="user-menu-item"><a href="#">Коля Петухов</a></li>
+        <li class="user-menu-item"><a href="#">Выйти</a></li>
+        <li class="user-menu-item"><a href="#">Сравнить</a></li>
+        <li class="user-menu-item"><a href="#">Корзина</a></li>
       </ul>
 
       <nav>
-        <ul>
-          <li>
-            <a class="uppercase custom-a" href="catalog.html">Каталог товаров</a>
-            <ul class="catalog-menu">
-              <li><a class="custom-a" href="#">Виртуальная реальность</a></li>
-              <li><a class="custom-a" href="#">Фитнес-браслеты</a></li>
-              <li><a class="custom-a" href="#">Квадрокоптеры</a></li>
-              <li><a class="custom-a" href="#">Моноподы для селфи</a></li>
-              <li><a class="custom-a" href="#">Умные часы</a></li>
-              <li><a class="custom-a" href="#">Экшн-камеры</a></li>
+        <ul class="main-menu-list">
+          <li class="main-menu-item">
+            <a href="catalog.html">Каталог товаров</a>
+            <ul class="catalog-menu-list">
+              <li class="catalog-menu-item"><a href="#">Виртуальная реальность</a></li>
+              <li class="catalog-menu-item"><a href="#">Фитнес-браслеты</a></li>
+              <li class="catalog-menu-item"><a href="#">Квадрокоптеры</a></li>
+              <li class="catalog-menu-item"><a href="#">Моноподы для селфи</a></li>
+              <li class="catalog-menu-item"><a href="#">Умные часы</a></li>
+              <li class="catalog-menu-item"><a href="#">Экшн-камеры</a></li>
             </ul>
           </li>
-          <li><a class="uppercase custom-a" href="#">Доставка</a></li>
-          <li><a class="uppercase custom-a" href="#">Гарантия</a></li>
-          <li><a class="uppercase custom-a" href="#">Контакты</a></li>
+          <li class="main-menu-item"><a href="#">Доставка</a></li>
+          <li class="main-menu-item"><a href="#">Гарантия</a></li>
+          <li class="main-menu-item"><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
 
+
     <main>
       <header>
-        <h1 class="tagline">Моноподы для селфи</h1>
-        <ul class="bread-crumbs">
-          <li><a class="custom-a" href="index.html">Главная</a></li>
-          <li><a class="custom-a" href="#">Каталог товаров</a></li>
+        <h1 class="title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Каталог товаров</a></li>
           <li><a>Моноподы для селфи</a></li>
         </ul>
       </header>
 
       <section class="filter-section">
-        <h2 class="uppercase">Фильтр:</h2>
+        <h2>Фильтр:</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-            <legend class="title">Стоимость</legend>
+            <legend class="filter-item">Стоимость</legend>
             <button type="button">
               <span class="visually-hidden">Изменить минимальную цену.</span>
             </button>
@@ -78,7 +79,7 @@
           </fieldset>
 
           <fieldset>
-            <legend class="title">Цвет</legend>
+            <legend class="filter-item">Цвет</legend>
             <ul>
               <li>
                 <label>
@@ -109,7 +110,7 @@
           </fieldset>
 
           <fieldset>
-            <legend class="title">Bluetooth</legend>
+            <legend class="filter-item">Bluetooth</legend>
             <ul>
               <li>
                 <label>
@@ -123,13 +124,13 @@
               </li>
             </ul>
           </fieldset>
-          <button class="uppercase" type="submit">Показать</button>
+          <button class="btn" type="submit">Показать</button>
         </form>
       </section>
 
       <section class="sort-section">
         <form action="https://echo.htmlacademy.ru">
-          <label class="uppercase">
+          <label>
             Сортировка:
             <select name="sort">
               <option value="popular">Сначала популярные</option>
@@ -150,34 +151,34 @@
 
       <section>
         <h2>Товары</h2>
-        <ul>
-          <li>
-            <a href="#">Подробнее<img src="img/product-catalog/selfie-stick-amateur.png" alt="Любительская селфи-палка" width="360" height="380"></a>
-            <h3 class="title">Любительская селфи-палка</h3>
+        <ul class="product-list">
+          <li class="product-item">
+            <a class="btn" href="#">Подробнее<img src="img/product-catalog/selfie-stick-amateur.png" alt="Любительская селфи-палка" width="360" height="380"></a>
+            <h3>Любительская селфи-палка</h3>
             <span class="price">500 ₽</span>
           </li>
-          <li>
-            <a href="#">Подробнее<img src="img/product-catalog/selfie-stick-proff.png" alt="Профессиональная селфи-палка" width="360" height="380"></a>
-            <h3 class="title">Профессиональная селфи-палка </h3>
+          <li class="product-item">
+            <a class="btn" href="#">Подробнее<img src="img/product-catalog/selfie-stick-proff.png" alt="Профессиональная селфи-палка" width="360" height="380"></a>
+            <h3>Профессиональная селфи-палка </h3>
             <span class="price">1500 ₽</span>
           </li>
-          <li>
-            <a href="#">Подробнее<img src="img/product-catalog/selfie-stick-unsinkable.png" alt="Непотопляемая селфи-палка" width="360" height="380"></a>
-            <h3 class="title">Непотопляемая селфи-палка</h3>
+          <li class="product-item">
+            <a class="btn" href="#">Подробнее<img src="img/product-catalog/selfie-stick-unsinkable.png" alt="Непотопляемая селфи-палка" width="360" height="380"></a>
+            <h3>Непотопляемая селфи-палка</h3>
             <span class="price">2500 ₽</span>
           </li>
-          <li>
-            <a href="#">Подробнее<img src="img/product-catalog/selfie-stick-follow-me.png" alt="Селфи-палка «Следуй за мной»" width="360" height="380"></a>
-            <h3 class="title">Селфи-палка «Следуй за мной»</h3>
+          <li class="product-item">
+            <a class="btn" href="#">Подробнее<img src="img/product-catalog/selfie-stick-follow-me.png" alt="Селфи-палка «Следуй за мной»" width="360" height="380"></a>
+            <h3>Селфи-палка «Следуй за мной»</h3>
             <span class="price">4900 ₽</span>
           </li>
         </ul>
       </section>
 
       <footer>
-        <button class="uppercase" type="button">Загрузить еще</button>
+        <button class="load-more-btn" type="button">Загрузить еще</button>
         <ol class="pagination">
-          <li><a href="#">Назад</a></li>
+          <li><a class="back-link" href="#">Назад</a></li>
           <li><a href="#">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
@@ -186,7 +187,7 @@
             ...</a>
           </li>
           <li><a href="#">15</a></li>
-          <li><a href="#">Вперед</a></li>
+          <li><a class="forward-link" href="#">Вперед</a></li>
         </ol>
       </footer>
     </main>
@@ -206,16 +207,16 @@
 
       <section>
         <h2 class="visually-hidden">Навигация</h2>
-        <ul class="footer-services">
-          <li><a class="uppercase custom-a" href="#">Доставка</a></li>
-          <li><a class="uppercase custom-a" href="#">Гарантия</a></li>
-          <li><a class="uppercase custom-a" href="#">Контакты</a></li>
+        <ul class="footer-services-list">
+          <li class="footer-services-item"><a href="#">Доставка</a></li>
+          <li class="footer-services-item"><a href="#">Гарантия</a></li>
+          <li class="footer-services-item"><a href="#">Контакты</a></li>
         </ul>
       </section>
 
       <p>
-        <span>Тел.:</span>
-        <a class="custom-a tel" href="tel:88128121212">+7 (812) 812-12-12</a>
+        <span class="footer-phone-link">Тел.:</span>
+        <a class="footer-phone-link" href="tel:88128121212">+7 (812) 812-12-12</a>
       </p>
 
       <section>
