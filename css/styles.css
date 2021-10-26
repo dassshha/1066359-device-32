@@ -30,13 +30,30 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #444444;
+}
+
+ul, ol, dl {
+  padding: 0;
+  margin: 0;
 }
 
 .btn {
@@ -53,6 +70,27 @@ body {
 
 .main-header {
   background-color: #FFE17F;
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.first-row-header-container {
+  display: flex;
+  width: 1075px;
+  padding-right: 25px;
+}
+
+.search-form-container {
+  width: 516px;
+  margin-right: auto;
+}
+
+.user-menu-list {
+  width: 535px;
 }
 
 .user-menu-item a {
@@ -60,6 +98,10 @@ body {
   line-height: 19px;
   color: #000000;
   text-decoration: none;
+}
+
+.main-menu-list {
+  width: 1041px;
 }
 
 .main-menu-item > a {
@@ -71,6 +113,10 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+
+.catalog-menu-list {
+  width: 640px;
 }
 
 .catalog-menu-item a {
@@ -99,10 +145,25 @@ body {
   color: #000000;
 }
 
+.product-categories-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product-categories-item{
+  width: 160px;
+}
+
+.product-categories-img-container {
   background-color: #FFE17F;
   width: 160px;
   height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-categories-item:nth-child(2) img{
+  align-self: flex-end;
 }
 
 .product-categories-item h3 {
@@ -327,4 +388,73 @@ body {
   opacity: 1;
   color: #000000;
 }
+
+.main-container {
+  flex-grow: 1;
+}
+
+.demonstration-section,
+.categories-section,
+.services-container,
+.delivery-arrangement-section {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.about-us-and-contacts-container {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us-section {
+  width: 560px;
+}
+
+.contacts-section {
+  width: 560px;
+}
+
+.subscribe-container {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.subscribe-container .title {
+  width: 560px;
+}
+
+.subscribe-container p {
+  width: 560px;
+}
+
+.subscribe-container form {
+  width: 861px;
+}
+
+.main-footer-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.main-footer-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-contacts-section {
+  width: 238px;
+  margin-right: 114px;
+}
+
+.footer-navigation-section {
+  width: 460px;
+  margin-right: auto;
+}
+
+
 
