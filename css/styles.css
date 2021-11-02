@@ -456,5 +456,30 @@ ul, ol, dl {
   margin-right: auto;
 }
 
+.catalog-container {
+  flex-grow: 1;
+}
 
+.catalog-header {
+  width: 1160px;
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
+}
 
+.catalog-content-container {
+  display: flex;
+}
+
+.filter-section {
+  width: 468px;
+  padding-left: 200px;
+  padding-right: 32px;
+
+}
+
+.catalog-right-column-container {
+  display: flex;
+  width: 972px;
+  flex-direction: column;
+}
