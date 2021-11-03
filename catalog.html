@@ -62,7 +62,9 @@
 
       <div class="catalog-content-container">
         <section class="filter-section">
-          <h2>Фильтр:</h2>
+          <div class="filter-header-wrapper">
+            <h2>Фильтр:</h2>
+          </div>
           <form method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend class="filter-item">Стоимость</legend>
@@ -132,28 +134,32 @@
 
         <div class="catalog-right-column-container">
           <section class="sort-section">
-            <form action="https://echo.htmlacademy.ru">
-              <label>
-                Сортировка:
-                <select name="sort">
-                  <option value="popular">Сначала популярные</option>
-                </select>
-              </label>
-              <button type="submit">
-                <span class="visually-hidden">Отсортировать.</span>
-              </button>
-            </form>
+            <div class="sort-section-container">
+              <form action="https://echo.htmlacademy.ru">
+                <label>
+                  Сортировка:
+                  <select name="sort">
+                    <option value="popular">Сначала популярные</option>
+                  </select>
+                </label>
+                <button type="submit">
+                  <span class="visually-hidden">Отсортировать.</span>
+                </button>
+              </form>
 
-            <a href="#">
-              <span class="visually-hidden">По возрастанию.</span>
-            </a>
-            <a href="#">
-              <span class="visually-hidden">По убыванию.</span>
-            </a>
+              <div class="sort-min-max-price-container">
+                <a href="#">
+                  <span class="visually-hidden">По возрастанию.</span>
+                </a>
+                <a href="#">
+                  <span class="visually-hidden">По убыванию.</span>
+                </a>
+              </div>
+            </div>
           </section>
-
-          <section>
-            <h2>Товары</h2>
+          <div class="products-and-pagination-container">
+          <section class="products-section">
+            <h2 hidden>Товары</h2>
             <ul class="product-list">
               <li class="product-item">
                 <a class="btn" href="#">Подробнее<img src="img/product-catalog/selfie-stick-amateur.png" alt="Любительская селфи-палка" width="360" height="380"></a>
@@ -178,7 +184,7 @@
             </ul>
           </section>
 
-          <footer>
+          <footer class="pagination-and-load-footer">
             <button class="load-more-btn" type="button">Загрузить еще</button>
             <ol class="pagination">
               <li><a class="back-link" href="#">Назад</a></li>
@@ -193,6 +199,7 @@
               <li><a class="forward-link" href="#">Вперед</a></li>
             </ol>
           </footer>
+          </div>
         </div>
       </div>
     </main>
