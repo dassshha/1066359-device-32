@@ -102,6 +102,7 @@ ul, ol, dl {
 
 .main-menu-list {
   width: 1041px;
+  display: flex;
 }
 
 .main-menu-item > a {
@@ -113,6 +114,8 @@ ul, ol, dl {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  display: block;
+  padding: 20px 20px;
 }
 
 .catalog-menu-list {
