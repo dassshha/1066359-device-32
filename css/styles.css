@@ -51,9 +51,24 @@ body {
   color: #444444;
 }
 
-ul, ol, dl {
+ul, ol, dl, dd {
   padding: 0;
   margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .btn {
@@ -91,6 +106,9 @@ ul, ol, dl {
 
 .user-menu-list {
   width: 535px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .user-menu-item a {
@@ -98,11 +116,18 @@ ul, ol, dl {
   line-height: 19px;
   color: #000000;
   text-decoration: none;
+  display: block;
+  padding: 15px 20px;
+}
+
+.user-menu-item:first-child {
+  margin-right: auto;
 }
 
 .main-menu-list {
   width: 1041px;
   display: flex;
+  list-style-type: none;
 }
 
 .main-menu-item > a {
@@ -115,11 +140,14 @@ ul, ol, dl {
   color: #000000;
   text-decoration: none;
   display: block;
-  padding: 20px 20px;
+  padding: 15px 20px;
 }
 
 .catalog-menu-list {
-  width: 640px;
+  /*width: 640px;*/
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .catalog-menu-item a {
@@ -127,6 +155,8 @@ ul, ol, dl {
   line-height: 18px;
   color: #000000;
   text-decoration: none;
+  display: block;
+  padding: 5px 15px;
 }
 
 .slogan {
@@ -135,6 +165,19 @@ ul, ol, dl {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+}
+
+.product-features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature {
+  margin-right: 20px;
+}
+
+.feature:last-child {
+  margin-right: 0;
 }
 
 .product-features-list dt {
@@ -151,6 +194,8 @@ ul, ol, dl {
 .product-categories-list {
   display: flex;
   justify-content: space-between;
+  list-style-type: none;
+  list-style-type: none;
 }
 
 .product-categories-item{
@@ -164,6 +209,7 @@ ul, ol, dl {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 33px;
 }
 .product-categories-item:nth-child(2) img{
   align-self: flex-end;
@@ -176,6 +222,7 @@ ul, ol, dl {
   line-height: 24px;
   letter-spacing: -0.02em;
   color: #000000;
+  margin: 0;
 }
 
 .product-categories-item a {
@@ -184,6 +231,7 @@ ul, ol, dl {
 
 .services-section {
   background: #F0F0F0;
+  margin-bottom: 90px;
 }
 
 .title {
@@ -207,10 +255,6 @@ ul, ol, dl {
 .credit {
   background-image: url("../img/service/credit.png");
   background-repeat: no-repeat;
-}
-
-.delivery-arrangement-section {
-  background-color: #F0F0F0;
 }
 
 .delivery-arrangement-link {
@@ -270,6 +314,11 @@ ul, ol, dl {
   font-size: 16px;
   line-height: 19px;
 }
+.footer-services-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .footer-services-item a {
   font-family: "Raleway", sans-serif;
@@ -281,6 +330,8 @@ ul, ol, dl {
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
+  display: block;
+  padding: 15px 20px;
 }
 
 .footer-phone-link {
@@ -289,6 +340,16 @@ ul, ol, dl {
   text-align: right;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.breadcrumbs {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.breadcrumb {
+  margin-right: 34px;
 }
 
 .breadcrumbs a {
@@ -428,6 +489,14 @@ ul, ol, dl {
   margin: 0 auto;
 }
 
+.demonstration-section {
+  margin-bottom: 110px;
+}
+
+.categories-section {
+  margin-bottom: 70px;
+}
+
 .about-us-and-contacts-container {
   width: 1160px;
   margin: 0 auto;
@@ -492,6 +561,7 @@ ul, ol, dl {
   margin: 0 auto;
   padding-left: 60px;
   padding-right: 60px;
+  margin-bottom: 50px;
 }
 
 .catalog-content-container {
@@ -522,3 +592,109 @@ ul, ol, dl {
   width: 760px;
   margin-left: 72px;
 }
+
+.product-demonstration-list {
+  list-style-type: none;
+}
+
+.slider-list {
+  list-style-type: none;
+}
+
+.slider-item .slogan {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.slider-item p {
+  margin-bottom: 30px;
+}
+
+.slider-item .btn {
+  margin-bottom: 70px;
+  display: inline-block;
+}
+
+.slider-button-list {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.slider-button-item {
+  margin-right: 22px;
+}
+
+.slider-button-item:last-child {
+  margin-right: 0;
+}
+
+.services-description-item .title {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.services-title-list {
+  list-style-type: none;
+}
+
+.services-description-list {
+  list-style-type: none;
+}
+
+.delivery-arrangement-section {
+  background-color: #F0F0F0;
+  margin-bottom: 97px;
+}
+
+.about-us-section .title,
+.contacts-section .title {
+  margin-top: 42px;
+  margin-bottom: 26px;
+}
+
+.about-us-and-contacts-container {
+  margin-bottom: 87px;
+}
+
+.socials-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.socials-item {
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  margin-right: 15px;
+}
+
+.socials-item:last-child {
+  margin-right: 0;
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.pagination-item a {
+  display: block;
+  padding: 7px 20px;
+}
+
+.pagination-item .back-link,
+.pagination-item .forward-link {
+  padding: 30px 40px;
+}
+.back {
+  margin-right: auto;
+}
+
+.forward {
+  margin-left: auto;
+}
+
