@@ -7,46 +7,47 @@
   </head>
   <body>
     <header class="main-header">
-      <a href="https://htmlacademy.ru/">
+      <a href="https://htmlacademy.ru/" class="logo-link">
         <img src="img/logo/logo-header.svg" alt="Логотип" width="145" height="36">
       </a>
+      <div class="main-header-container">
+        <div class="first-row-header-container">
+          <form class="search-form-container" action="https://echo.htmlacademy.ru/">
+            <label class="visually-hidden">
+              Поиск
+              <input type="search" name="search" placeholder="Поиск по сайту">
+            </label>
+            <button type="submit">
+              <span class="visually-hidden">Найти</span>
+            </button>
+          </form>
 
-      <div class="first-row-header-container">
-        <form class="search-form-container" action="https://echo.htmlacademy.ru/">
-          <label class="visually-hidden">
-            Поиск
-            <input type="search" name="search" placeholder="Поиск по сайту">
-          </label>
-          <button type="submit">
-            <span class="visually-hidden">Найти</span>
-          </button>
-        </form>
+          <ul class="user-menu-list">
+            <li class="user-menu-item"><a href="#">Войти</a></li>
+            <li class="user-menu-item"><a href="#">Сравнить</a></li>
+            <li class="user-menu-item"><a href="#">Корзина</a></li>
+          </ul>
+        </div>
 
-        <ul class="user-menu-list">
-          <li class="user-menu-item"><a href="#">Войти</a></li>
-          <li class="user-menu-item"><a href="#">Сравнить</a></li>
-          <li class="user-menu-item"><a href="#">Корзина</a></li>
-        </ul>
+        <nav>
+          <ul class="main-menu-list">
+            <li class="main-menu-item">
+              <a href="catalog.html">Каталог товаров</a>
+              <ul class="catalog-menu-list">
+                <li class="catalog-menu-item"><a href="#">Виртуальная реальность</a></li>
+                <li class="catalog-menu-item"><a href="#">Фитнес-браслеты</a></li>
+                <li class="catalog-menu-item"><a href="#">Квадрокоптеры</a></li>
+                <li class="catalog-menu-item"><a href="#">Моноподы для селфи</a></li>
+                <li class="catalog-menu-item"><a href="#">Умные часы</a></li>
+                <li class="catalog-menu-item"><a href="#">Экшн-камеры</a></li>
+              </ul>
+            </li>
+            <li class="main-menu-item"><a href="#">Доставка</a></li>
+            <li class="main-menu-item"><a href="#">Гарантия</a></li>
+            <li class="main-menu-item"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
-
-      <nav>
-        <ul class="main-menu-list">
-          <li class="main-menu-item">
-            <a href="catalog.html">Каталог товаров</a>
-            <ul class="catalog-menu-list">
-              <li class="catalog-menu-item"><a href="#">Виртуальная реальность</a></li>
-              <li class="catalog-menu-item"><a href="#">Фитнес-браслеты</a></li>
-              <li class="catalog-menu-item"><a href="#">Квадрокоптеры</a></li>
-              <li class="catalog-menu-item"><a href="#">Моноподы для селфи</a></li>
-              <li class="catalog-menu-item"><a href="#">Умные часы</a></li>
-              <li class="catalog-menu-item"><a href="#">Экшн-камеры</a></li>
-            </ul>
-          </li>
-          <li class="main-menu-item"><a href="#">Доставка</a></li>
-          <li class="main-menu-item"><a href="#">Гарантия</a></li>
-          <li class="main-menu-item"><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
     </header>
 
     <main class="main-container">
@@ -82,14 +83,10 @@
               </p>
               <a class="btn" href="#">Подробнее</a>
               <dl class="product-features-list">
-                <div class="feature">
                   <dt>Дальность полета</dt>
                   <dd>800 м</dd>
-                </div>
-                <div class="feature">
                   <dt>Радиус поражения</dt>
                   <dd>50 м</dd>
-                </div>
               </dl>
             </li>
             <li class="slider-item">
@@ -102,10 +99,8 @@
               </p>
               <a class="btn" href="#">Подробнее</a>
               <dl class="product-features-list">
-                <div class="feature">
                   <dt>Без подзарядки</dt>
                   <dd>48 часов</dd>
-                </div>
               </dl>
             </li>
             <li class="slider-item">
@@ -118,18 +113,12 @@
               </p>
               <a class="btn" href="#">Подробнее</a>
               <dl class="product-features-list">
-                <div class="feature">
                   <dt>Длина палки</dt>
                   <dd>8,5 м</dd>
-                </div>
-                <div class="feature">
                   <dt>Вес палки</dt>
                   <dd>5 кг</dd>
-                </div>
-                <div class="feature">
                   <dt>Металл</dt>
                   <dd>Карбон</dd>
-                </div>
               </dl>
             </li>
           </ol>
