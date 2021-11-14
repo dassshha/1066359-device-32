@@ -63,7 +63,10 @@ img {
 p {
   margin: 0;
 }
-
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -127,6 +130,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  justify-content: flex-end;
 }
 
 .user-menu-item a {
@@ -134,12 +138,12 @@ p {
   line-height: 19px;
   color: #000000;
   text-decoration: none;
-  display: block;
+  display: inline-block;
   padding: 15px 20px;
 }
 
 .user-menu-item:first-child {
-  margin-right: auto;
+  width: 250px;
 }
 
 .main-menu-list {
@@ -164,8 +168,13 @@ p {
 .catalog-menu-list {
   /*width: 640px;*/
   display: flex;
-  flex-wrap: wrap;
   list-style-type: none;
+  justify-content: space-between;
+}
+
+.catalog-menu-item ul {
+  list-style-type: none;
+  width: max-content;
 }
 
 .catalog-menu-item a {
@@ -247,7 +256,7 @@ p {
 }
 
 .services-section {
-  background: #F0F0F0;
+  background: linear-gradient( white 175px, #F0F0F0 175px);;
   margin-bottom: 90px;
 }
 
@@ -257,21 +266,6 @@ p {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
-}
-
-.delivery {
-  background-image: url("../img/service/delivery.png");
-  background-repeat: no-repeat;
-}
-
-.guarantee {
-  background-image: url("../img/service/guarantee.png");
-  background-repeat: no-repeat;
-}
-
-.credit {
-  background-image: url("../img/service/credit.png");
-  background-repeat: no-repeat;
 }
 
 .delivery-arrangement-link {
@@ -512,29 +506,23 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 560px);
   gap: 40px;
+  background: linear-gradient(#FFE17F, #FFE17F 150px, white 150px);
 }
 
 .product-demonstration-list {
   display: grid;
   grid-template-columns: 560px;
-  grid-template-rows: repeat(auto-fit, minmax(560px, 1fr));
   gap: 40px;
-}
-
-.product-demonstration-item {
-  border: 5px solid tomato;
 }
 
 .slider-list {
   display: grid;
   grid-template-columns: 560px;
-  grid-template-rows: repeat(auto-fit, minmax(560px, 1fr));
   gap: 40px;
 }
 
 .slider-item {
   padding-top: 123px;
-  border: 5px solid tomato;
 }
 
 .categories-section {
@@ -689,6 +677,8 @@ p {
 
 .services-title-list {
   list-style-type: none;
+  width: 280px;
+  margin-right: 120px;
 }
 
 .services-description-list {
@@ -751,4 +741,12 @@ p {
   margin-left: auto;
 }
 
+.services-container {
+  display: flex;
+  align-items: center;
+}
+
+.filter-section ul {
+  list-style-type: none;
+}
 
