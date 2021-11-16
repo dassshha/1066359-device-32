@@ -818,6 +818,7 @@ fieldset {
 .slider-item .btn {
   margin-bottom: 54px;
   display: inline-block;
+  position: relative;
 }
 
 .slider-button-list {
@@ -1259,6 +1260,38 @@ fieldset {
   bottom: 21px;
 }
 
+.slider-item .btn::before {
+  position: absolute;
+  width: 220px;
+  height: 8px;
+  background-color: #FFE17F;
+  content: '';
+  top: 22px;
+  left: -10px;
+  z-index: -1;
+}
+
+.slider-item .btn:focus::before {
+  background-color: #AF4FFF;
+}
+
+.slider-item .btn:hover{
+  background-color: #FFE17F;
+}
+
+.slider-item .btn:hover::before{
+  display: none;
+}
+
+.slider-item .btn:active{
+  background-color: #FFE17F;
+  opacity: 0.3;
+}
+
+.slider-item .btn:active::before{
+  display: none;
+}
+
 fieldset {
   padding: 43px 0;
   margin-bottom: 14px;
@@ -1417,7 +1450,77 @@ fieldset:last-of-type {
 .footer-phone-link {
   padding: 5px;
 }
-.footer-phone-link:hover {
+
+.footer-phone-link:focus {
   border: 2px solid #AF4FFF;
   border-radius: 25px;
+}
+
+.footer-phone-link:hover {
+  color: #FFC700;
+}
+
+.footer-phone-link:active {
+  color: #FFC700;
+  opacity: 0.3;
+}
+
+/*.socials-item a:focus svg {*/
+/*  border: 5px solid #AF4FFF;*/
+/*  border-radius: 50%;*/
+/*  width: 50px;*/
+/*  height: 50px;*/
+/*  fill: #FFFFFF;*/
+/*}*/
+
+/*.socials-item a:hover svg {*/
+/*  !*background-color: rgba(0,0,0,1);*!*/
+/*  fill: black;*/
+/*  fill-opacity: 1;*/
+/*  border-radius: 50%;*/
+/*}*/
+
+/*.socials-item a:hover svg {*/
+/*  background-color: #FFC700;*/
+/*  border-radius: 50%;*/
+/*}*/
+
+.product-categories-item a:focus .product-categories-img-container{
+  border: 5px solid #AF4FFF;
+}
+
+.product-categories-item a:focus .product-categories-title{
+  color: #AF4FFF;
+}
+
+.product-categories-item a:hover .product-categories-img-container {
+  background-color: #FFC700;
+}
+
+.product-categories-item a:active .product-categories-img-container{
+  background-color: #FFC700;
+  opacity: 0.3;
+}
+
+.product-categories-item a:active .product-categories-title{
+  opacity: 0.3;
+}
+
+.services-title-item {
+  position: relative;
+}
+
+.services-title-item .btn {
+  z-index: 1;
+}
+
+.services-title-item .btn::before {
+  content: '';
+  position: absolute;
+  width: 160px;
+  height: 8px;
+  background-color: #FFC700;
+  top: 19px;
+  left: 0;
+  z-index: 0;
 }
