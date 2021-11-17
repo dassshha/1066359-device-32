@@ -250,7 +250,7 @@ fieldset {
   text-decoration: none;
   display: block;
   padding: 15px 20px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .catalog-menu-list {
@@ -1727,6 +1727,7 @@ fieldset:last-of-type {
 
 .catalog-menu-list {
   display: none;
+  width: 100%;
 }
 
 .main-menu-item:first-child > a:hover+.catalog-menu-list {
@@ -1735,4 +1736,85 @@ fieldset:last-of-type {
 
 .main-menu-item:first-child > a:hover::after {
   background-image: url("../img/minus.svg");
+}
+
+.slider-img-btn {
+  width: 40px;
+  height: 80px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-image: url("../img/slider/left-arrow.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-next-btn {
+  transform: rotate(180deg);
+}
+
+.slider-img-btn:focus {
+  outline: 2px solid #AF4FFF;
+  border-radius: 6px;
+}
+
+.slider-img-btn:hover {
+  opacity: 0.6;
+}
+
+.slider-img-btn:active {
+  opacity: 0.3;
+}
+
+.product-demonstration-item {
+  position: relative;
+}
+
+.slider-img-buttons-container {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.slider-desc-btn {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #000000;
+  background-color: transparent;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slider-item {
+  position: relative;
+}
+
+.slider-button-list {
+  position: absolute;
+  right: 0;
+  top: 350px;
+  right: 60px;
+}
+
+.slider-desc-btn-active {
+  background-color: #000000;
+}
+
+.slider-desc-btn:focus {
+  border: 2px solid #AF4FFF;
+}
+
+.slider-desc-btn:hover {
+  opacity: 0.6;
+}
+
+.slider-desc-btn:active {
+  opacity: 0.3;
 }
