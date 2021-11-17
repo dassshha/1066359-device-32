@@ -1923,3 +1923,20 @@ fieldset:last-of-type {
 .subscribe-email-input-error {
   border-bottom: 3px solid red;
 }
+
+.about-us-and-contacts-container .btn {
+  position: relative;
+}
+
+.about-us-and-contacts-container .btn::after {
+  position: absolute;
+  content: '';
+  width: 259px;
+  height: 8px;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #FFE17F;
+  z-index: -1;
+}
