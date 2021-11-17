@@ -1896,3 +1896,30 @@ fieldset:last-of-type {
   color: rgba(255,255,255,1);
   opacity: 0.3;
 }
+
+.subscribe-email-input {
+  background-color:  transparent;
+  border: none;
+  border-bottom: 3px solid rgba(0,0,0,0.1);
+}
+
+.subscribe-email-input:focus {
+  background-color: #DCDCDC;
+}
+
+.subscribe-email-input:hover {
+  color: #000000;
+  border-bottom: 3px solid rgba(0,0,0,1);
+}
+
+.subscribe-email-input:hover::-moz-placeholder {
+  color: rgba(0,0,0,1);
+}
+
+.subscribe-email-input:hover::-webkit-input-placeholder {
+  color: rgba(0,0,0,1);
+}
+
+.subscribe-email-input-error {
+  border-bottom: 3px solid red;
+}
