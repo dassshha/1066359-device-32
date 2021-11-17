@@ -250,7 +250,7 @@ fieldset {
   text-decoration: none;
   display: block;
   padding: 15px 20px;
-  margin-bottom: 38px;
+  margin-bottom: 30px;
 }
 
 .catalog-menu-list {
@@ -259,11 +259,13 @@ fieldset {
   width: 1158px;
   left: 0;
   z-index: 2;
+  display: none;
 }
 
 .main-menu-item:first-child > a {
   position: relative;
 }
+
 
 .main-menu-item:first-child > a::after {
   position: absolute;
@@ -1103,7 +1105,7 @@ fieldset {
 
 
 .services-description-item:nth-child(1) {
-  background-image: url("../img/service/delivery.png");
+  background-image: url("../img/service/delivery.svg");
   background-repeat: no-repeat;
   background-size: 136px 164px;
   background-position-y: 14px;
@@ -1111,7 +1113,7 @@ fieldset {
 }
 
 .services-description-item:nth-child(2) {
-  background-image: url("../img/service/guarantee.png");
+  background-image: url("../img/service/guarantee.svg");
   background-repeat: no-repeat;
   background-size: 136px 164px;
   background-position-y: 14px;
@@ -1119,7 +1121,7 @@ fieldset {
 }
 
 .services-description-item:nth-child(3) {
-  background-image: url("../img/service/credit.png");
+  background-image: url("../img/service/credit.svg");
   background-repeat: no-repeat;
   background-size: 136px 164px;
   background-position-y: 14px;
@@ -1180,7 +1182,7 @@ fieldset {
   height: 7px;
   content: url("../img/arrow.svg");
   right: 15px;
-  top: 0;
+  top: -5px;
 }
 
 .sort-min-max-price-container a{
@@ -1258,7 +1260,7 @@ fieldset {
   width: 80px;
   height: 1px;
   border-bottom: 7px solid #FFC700;
-  bottom: 21px;
+  bottom: 41px;
 }
 
 .slider-item .btn::before {
@@ -1442,6 +1444,8 @@ fieldset:last-of-type {
 .main-footer .html-academy-link {
   padding: 10px;
   fill: #FFC700;
+  margin-top: -10px;
+  margin-right: -15px;
 }
 
 .main-footer .html-academy-link:focus {
@@ -1708,4 +1712,27 @@ fieldset:last-of-type {
 
 .pagination-item a:active {
   opacity: 0.3;
+}
+
+.cart-link::after {
+  position: absolute;
+  content: '2';
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  padding: 1px 6px;
+  left: -2px;
+}
+
+.catalog-menu-list {
+  display: none;
+}
+
+.main-menu-item:first-child > a:hover+.catalog-menu-list {
+  display: flex;
+}
+
+.main-menu-item:first-child > a:hover::after {
+  background-image: url("../img/minus.svg");
 }
