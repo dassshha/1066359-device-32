@@ -83,18 +83,26 @@
           <form method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="cost-fieldset">
               <legend class="filter-item">Стоимость</legend>
-              <button type="button">
-                <span class="visually-hidden">Изменить минимальную цену.</span>
-              </button>
-              <label>
-                от <input type="number" name="min-price">
-              </label>
-              <button type="button">
-                <span class="visually-hidden">Изменить максимальную цену.</span>
-              </button>
-              <label>
-                до <input type="number" name="max-price">
-              </label>
+              <div class="range-container">
+                <div class="range-scale">
+                  <div class="range-bar" style="left:50px; width: 50px">
+                    <button class="range-btn min-price-range" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-btn max-price-range" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="range-input-container">
+                  <label>
+                    от <input type="number" value="50" name="min-price">
+                  </label>
+                  <label>
+                    до <input type="number" value="1500" name="max-price">
+                  </label>
+                </div>
+              </div>
             </fieldset>
 
             <fieldset class="color-fieldset">
@@ -102,43 +110,57 @@
               <ul>
                 <li>
                   <label>
-                    <input type="checkbox" name="color" value="black" checked> Чёрный
+                    <input class="input-checkbox visually-hidden" type="checkbox" name="color" value="black" checked>
+                    <span class="decorated-checkbox"></span>
+                    <span class="color-label">Чёрный</span>
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox" name="color" value="white" checked> Белый
+                    <input class="input-checkbox visually-hidden" type="checkbox" name="color" value="white" checked>
+                    <span class="decorated-checkbox"></span>
+                    <span class="color-label">Белый</span>
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox" name="color" value="blue"> Синий
+                    <input class="input-checkbox visually-hidden" type="checkbox" name="color" value="blue">
+                    <span class="decorated-checkbox"></span>
+                    <span class="color-label">Синий</span>
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox" name="color" value="red"> Красный
+                    <input class="input-checkbox visually-hidden" type="checkbox" name="color" value="red">
+                    <span class="decorated-checkbox"></span>
+                    <span class="color-label">Красный</span>
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox" name="color" value="pink"> Розовый
+                    <input class="input-checkbox visually-hidden" type="checkbox" name="color" value="pink">
+                    <span class="decorated-checkbox"></span>
+                    <span class="color-label">Розовый</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="bluetooth-fieldset">
               <legend class="filter-item">Bluetooth</legend>
               <ul>
                 <li>
                   <label>
-                    <input type="radio" name="bluetooth" checked> Есть
+                    <input class="input-radio visually-hidden" type="radio" name="bluetooth" checked>
+                    <span class="decorated-radio"></span>
+                    <span class="bluetooth-label">Есть</span>
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="radio" name="bluetooth"> Нет
+                    <input class="input-radio visually-hidden" type="radio" name="bluetooth">
+                    <span class="decorated-radio"></span>
+                    <span class="bluetooth-label">Нет</span>
                   </label>
                 </li>
               </ul>
@@ -154,12 +176,12 @@
                 <label for="sort">
                   Сортировка:
                 </label>
-                  <select name="sort" id="sort">
+                  <select class="sort-select" name="sort" id="sort">
                     <option value="popular">Сначала популярные</option>
                   </select>
 
-                <button type="submit">
-                  <span class="visually-hidden">Отсортировать.</span>
+                <button class="visually-hidden" type="submit">
+                  <span>Отсортировать.</span>
                 </button>
               </form>
 

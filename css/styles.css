@@ -516,7 +516,7 @@ fieldset {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
-  width: 33.5%;
+  width: 33.3%;
 }
 
 .filter-header-wrapper {
@@ -541,7 +541,7 @@ fieldset {
 
 .filter-section form {
   width: 207px;
-  margin-right: 68px;
+  margin-right: 64px;
   margin-left: auto;
 }
 
@@ -794,6 +794,8 @@ fieldset {
 
 .sort-min-max-price-container {
   margin-left: auto;
+  margin-right: -10px;
+  margin-top: -7px;
 }
 
 .pagination-and-load-footer {
@@ -1044,7 +1046,7 @@ fieldset {
 }
 
 .filter-section li:not(:last-of-type) {
-  margin-bottom: 14px;
+  margin-bottom: 21px;
 }
 
 .filter-section .btn{
@@ -1052,7 +1054,7 @@ fieldset {
   padding: 10px;
   background-color: transparent;
   align-self: center;
-  margin-top: -2px;
+  margin-top: 5px;
 }
 
 .filter-section input {
@@ -1295,8 +1297,8 @@ fieldset {
 }
 
 fieldset {
-  padding: 43px 0;
-  margin-bottom: 14px;
+  padding: 42px 0;
+  margin-bottom: 16px;
   position: relative;
 }
 
@@ -1939,4 +1941,244 @@ fieldset:last-of-type {
   margin: auto;
   background-color: #FFE17F;
   z-index: -1;
+}
+
+.range-scale {
+  position: relative;
+  background-color: #DCDCDC;
+  width: 200px;
+  height: 2px;
+  margin-top: -3px;
+  margin-bottom: 13px;
+}
+
+.range-bar {
+  height: 2px;
+  position: absolute;
+  background-color: #000000;
+}
+
+.range-btn {
+  position: absolute;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  top: -9px;
+}
+
+.range-btn:focus {
+  border: 2px solid #AF4FFF;
+}
+
+.range-btn:active {
+  background-color: #000000;
+}
+
+.min-price-range {
+  left: -9px;
+}
+
+.max-price-range {
+  right: -9px;
+}
+.range-input-container label,
+.range-input-container input{
+  font: inherit;
+  font-size: 16px;
+  color: rgba(0,0,0,0.3);
+}
+
+.range-container {
+  margin-bottom: -9px;
+}
+
+.range-input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.range-input-container input {
+  width: 30px;
+  background-color: transparent;
+  padding: 0 2px;
+  font: inherit;
+  text-align: center;
+  border: none;
+}
+
+.range-input-container input::-webkit-outer-spin-button,
+.range-input-container input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.color-fieldset label,
+.bluetooth-fieldset label{
+  position: relative;
+  padding-left: 40px;
+}
+
+.decorated-checkbox {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0,0,0,0.2);
+  left: 4px;
+  cursor: pointer;
+  margin: 3px 0;
+  border-radius: 3px;
+}
+
+.decorated-radio {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0,0,0,0.2);
+  border-radius: 50%;
+  left: 4px;
+  cursor: pointer;
+  margin: 3px 0;
+}
+
+.input-checkbox:checked + .decorated-checkbox {
+  border: 2px solid rgba(0,0,0,1);
+}
+
+.input-radio:checked + .decorated-radio {
+  border: 2px solid rgba(0,0,0,1);
+}
+
+
+.input-checkbox:checked + .decorated-checkbox::before,
+.input-checkbox:checked + .decorated-checkbox::after{
+  position: absolute;
+  content: '';
+  width: 6px;
+  height: 2px;
+  background-color: #000000;
+  top: 62%;
+  left: 24%;
+  transform: rotate(40deg);
+}
+
+.input-checkbox:checked + .decorated-checkbox::after{
+  width: 10px;
+  transform: rotate(125deg);
+  left: 35%;
+  top: 47%;
+}
+
+.input-radio:checked + .decorated-radio::after {
+  position: absolute;
+  background-color: #000000;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.input-checkbox:focus ~ .color-label {
+  color: #AF4FFF;
+}
+
+.input-checkbox:focus + .decorated-checkbox{
+  border: 2px solid #AF4FFF;
+}
+
+.input-checkbox:focus + .decorated-checkbox::after,
+.input-checkbox:focus + .decorated-checkbox::before {
+  background-color: #AF4FFF;
+}
+
+.input-checkbox:checked + .decorated-checkbox:hover{
+  opacity: 0.5;
+}
+
+.input-checkbox:checked:hover ~ .color-label {
+  opacity: 0.5;
+}
+
+
+.input-checkbox:active ~ .color-label {
+  color: rgba(0,0,0,0.2);
+}
+
+.input-checkbox:active + .decorated-checkbox {
+  opacity: 0.2;
+}
+
+
+
+
+
+.input-radio:focus ~ .bluetooth-label {
+  color: #AF4FFF;
+}
+
+.input-radio:focus + .decorated-radio{
+  border: 2px solid #AF4FFF;
+}
+
+.input-radio:focus + .decorated-radio::after{
+  background-color: #AF4FFF;
+}
+
+.input-radio:checked + .decorated-radio:hover{
+  opacity: 0.5;
+}
+
+.input-radio:checked:hover ~ .bluetooth-label {
+  opacity: 0.5;
+}
+
+
+.input-radio:active ~ .bluetooth-label {
+  color: rgba(0,0,0,0.2);
+}
+
+.input-radio:active + .decorated-radio {
+  opacity: 0.2;
+}
+
+.filter-section .btn {
+  position: relative;
+  z-index: 0;
+}
+
+.filter-section .btn::after {
+  width: 200px;
+  height: 8px;
+  content: '';
+  position: absolute;
+  background-color: #FFC700;
+  top: 17px;
+  left: -27px;
+  z-index: -1;
+}
+
+.sort-select {
+  width: 210px;
+  font: inherit;
+  background-color: transparent;
+  border: none;
+}
+
+.sort-select:focus {
+  outline:  5px solid #AF4FFF;
+  padding: 5px;
+}
+
+.sort-select:hover {
+  opacity: 0.6;
+}
+
+.sort-select:active {
+  opacity: 0.3;
 }
