@@ -34,7 +34,9 @@
                       <a href="#" class="popup-product-link">
                         <img src="img/product-catalog/selfie-stick-amateur.png" width="41" height="43" alt="Любительская селфи-палка">
                         <h3>Любительская селфи-палка</h3>
-                        <span class="popup-product-delete-btn"></span>
+                        <button type="button" class="popup-product-delete-btn">
+                          <span class="visually-hidden">Удалить товар из корзины</span>
+                        </button>
                       </a>
                     </li>
                     <li class="popup-product-item">
@@ -42,7 +44,9 @@
                         <img src="img/product-catalog/selfie-stick-proff.png" width="41" height="43" alt="Профессиональная селфи-палка">
                         <h3>Профессиональная
                           селфи-палка</h3>
-                        <span class="popup-product-delete-btn"></span>
+                        <button type="button" class="popup-product-delete-btn">
+                          <span class="visually-hidden">Удалить товар из корзины</span>
+                        </button>
                       </a>
                     </li>
                   </ul>
@@ -478,6 +482,32 @@
         </div>
       </div>
     </footer>
+    <div class="modal close-modal">
+      <div class="modal-delivery">
+        <h2 class="title">Доставка под заказ</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/">
+            <fieldset class="modal-name-fieldset">
+              <label>Ваше имя:</label>
+              <input type="text" name="name-surname" id="name-surname" placeholder="Имя Фамилия">
+              <span class="please-write-your-name">Пожалуйста, представьтесь</span>
+            </fieldset>
+              <fieldset class="modal-email-fieldset">
+                <label>Ваш e-mail:</label>
+                <input type="email" name="email" id="email" value="krasotka92@mail.ru">
+                <span class="funny-address">Забавный у вас адрес</span>
+              </fieldset>
+              <fieldset class="modal-delivery-fieldset">
+                <label>Что нужно привезти:</label>
+                <input type="text" name="delivery" id="delivery" placeholder="В свободной форме">
+              </fieldset>
+              <fieldset class="modal-count-fieldset">
+                <label>Количество:</label>
+                <input type="number" name="count" id="count" value="1">
+              </fieldset>
+            <button class="btn modal-btn" type="submit">Отправить</button>
+          </form>
+      </div>
+    </div>
   </body>
 </html>
 
